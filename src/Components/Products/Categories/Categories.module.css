@@ -1,0 +1,8 @@
+.categories {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: solid;
+    border-radius: 20px;
+    width: 100%;
+}

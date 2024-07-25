@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./HeaderNormalMenu.module.css";
-import { Text } from "@mantine/core";
+import { Container, Text } from "@mantine/core";
 import { BsFillBoxSeamFill } from "react-icons/bs";
 import { FaRegSmile } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";

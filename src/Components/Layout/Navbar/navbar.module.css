@@ -7,7 +7,7 @@
 .inner {
   height: rem(500px);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -31,11 +31,19 @@
 }
 
 .buttonCart {
-  background-color: #919191;
-  color: white;
-  margin-right: 30px;
+  background-color: #919191 !important;
+  color: white !important;
+  /* margin-right: 30px; */
 }
 
-.search {
+.searchBar {
   margin-left: 244px;
+  margin-right: 0px !important;
+}
+
+.buttonSearch {
+  background-color: #919191 !important;
+  color: white !important;
+  margin-right: 30px;
+  margin-left: 0px !important;
 }
