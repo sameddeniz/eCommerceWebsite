@@ -1,12 +1,14 @@
+import HeaderMegaMenu from "../Components/Layout/HeaderMegaMenu/HeaderMegaMenu";
+import HeaderNormalMenu from "../Components/Layout/HeaderNormalMenu/HeaderNormalMenu";
 import Navbar from "../Components/Layout/Navbar/navbar";
-import { Container, MantineProvider } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 
 function HomePage() {
   return (
     <MantineProvider>
-      <Container>
-        <Navbar />
-      </Container>
+      <Navbar />
+      {/* <HeaderMegaMenu /> */}
+      <HeaderNormalMenu />
     </MantineProvider>
   );
 }
