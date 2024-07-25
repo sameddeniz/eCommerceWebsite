@@ -1,8 +1,16 @@
-import { Group, Burger, Button, Container, Input } from "@mantine/core";
+import {
+  Group,
+  Burger,
+  Button,
+  Container,
+  Input,
+  SimpleGrid,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./navbar.module.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
+import { FaCaretDown } from "react-icons/fa";
 
 function Navbar() {
   // const [opened, { toggle }] = useDisclosure(false);
@@ -11,43 +19,42 @@ function Navbar() {
     <>
       <Container size="lg">
         <header className={classes.header}>
-          <div className={classes.inner}>
-            <Group>
-              {/* <Burger
-              opened={opened}
-              onClick={toggle}
-              size="sm"
-              hiddenFrom="sm"
-            /> */}
-              <a href="index.html">
-                <img src="/src/assets/LOGO_Siyah.png"></img>
-              </a>
-            </Group>
-            <Group>
+          <Group>
+            <a href="index.html">
+              <img src="/src/assets/LOGO_Siyah.png"></img>
+            </a>
+          </Group>
+          <Group>
+            <Button.Group>
               <Input
                 className={classes.searchBar}
                 size="md"
                 radius="xs"
                 placeholder="Aradığınız ürünü yazınız"
               />
-            </Group>
-            <Button className={classes.buttonSearch}>ARA</Button>
+              <Button size="md" className={classes.buttonSearch}>
+                ARA
+              </Button>
+            </Button.Group>
             <Button
-              leftSection={<VscAccount size={14} />}
+              leftSection={<VscAccount size={16} />}
+              rightSection={<FaCaretDown size={18} />}
               className={classes.buttonAcc}
               variant="outline"
               color="gray"
+              size="md"
             >
               HESAP
             </Button>
             <Button
-              leftSection={<AiOutlineShoppingCart size={14} />}
+              leftSection={<AiOutlineShoppingCart size={20} />}
               className={classes.buttonCart}
+              size="md"
               // variant="outline"
             >
               SEPET
             </Button>
-          </div>
+          </Group>
         </header>
       </Container>
     </>

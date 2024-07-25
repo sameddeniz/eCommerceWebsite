@@ -7,7 +7,7 @@ const AdvSecondText = () => {
   return (
     <>
       <div className={classes.advSecondText}>
-        <Text mt="xs" pt="md" >
+        <Text mt="xs" pt="xl" >
           <FaStar color="yellow" />
           &nbsp;
           <FaStar color="yellow" />

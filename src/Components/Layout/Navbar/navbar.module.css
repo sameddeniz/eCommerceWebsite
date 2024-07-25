@@ -1,43 +1,12 @@
 .header {
-  height: 70px;
-  /* margin-bottom: rem(120px); */
-  margin-top: 24px;
-}
-
-.inner {
-  height: rem(500px);
+  height: 80px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.link {
-  display: block;
-  line-height: 1;
-  padding: rem(8px) rem(12px);
-  border-radius: var(--mantine-radius-sm);
-  text-decoration: none;
-  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
-  font-size: var(--mantine-font-size-sm);
-  font-weight: 500;
-
-  
-}
-
-.buttonAcc {
-  background-color: white;
-  color: #919191;
-  margin-right: 30px;
-}
-
-.buttonCart {
-  background-color: #919191 !important;
-  color: white !important;
-  /* margin-right: 30px; */
-}
-
 .searchBar {
-  margin-left: 244px;
   margin-right: 0px !important;
 }
 
@@ -46,4 +15,18 @@
   color: white !important;
   margin-right: 30px;
   margin-left: 0px !important;
+}
+
+.buttonAcc {
+  background-color: white;
+  color: #919191;
+  margin-right: 30px;
+  width: 135px;
+}
+
+.buttonCart {
+  background-color: #919191 !important;
+  color: white !important;
+  width: 190px;
+  /* margin-right: 30px; */
 }

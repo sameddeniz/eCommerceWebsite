@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./HeaderNormalMenu.module.css";
-import { Container, Text } from "@mantine/core";
+import { Container, SimpleGrid, Text } from "@mantine/core";
 import { BsFillBoxSeamFill } from "react-icons/bs";
 import { FaRegSmile } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
@@ -9,14 +9,17 @@ import { Grid } from "@mantine/core";
 const HeaderNormalMenu = () => {
   return (
     <>
-      <div className={classes.headerBlackMenu}>
-        <Text>PROTEİN</Text>
-        <Text>SPOR GIDALARI</Text>
-        <Text>SAĞLIK</Text>
-        <Text>GIDA</Text>
-        <Text>VİTAMİN</Text>
-        <Text>TÜM ÜRÜNLER</Text>
-      </div>
+      <Container size="lg" >
+        <SimpleGrid cols={6} className={classes.headerBlackMenu}>
+          <Text>PROTEİN</Text>
+          <Text>SPOR GIDALARI</Text>
+          <Text>SAĞLIK</Text>
+          <Text>GIDA</Text>
+          <Text>VİTAMİN</Text>
+          <Text>TÜM ÜRÜNLER</Text>
+        </SimpleGrid>
+      </Container>
+
       {/* <Grid className={classes.headerWhiteMenu}>
         <Grid.Col span={4}>
           <Text>
