@@ -1,5 +1,4 @@
 .headerBlackMenu {
-  background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -8,7 +7,7 @@
 }
 
 .headerWhiteMenu {
-  background-color:#F7F7F7;
+  background-color: #f7f7f7;
   color: black;
   display: flex;
   justify-content: space-around;

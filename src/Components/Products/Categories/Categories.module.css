@@ -1,8 +1,8 @@
 .categories {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: solid;
-    border-radius: 20px;
-    width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
 }

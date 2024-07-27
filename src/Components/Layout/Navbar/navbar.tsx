@@ -5,6 +5,7 @@ import {
   Container,
   Input,
   SimpleGrid,
+  Indicator,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./navbar.module.css";
@@ -46,13 +47,11 @@ function Navbar() {
             >
               HESAP
             </Button>
-            <Button
-              leftSection={<AiOutlineShoppingCart size={20} />}
-              className={classes.buttonCart}
-              size="md"
-              // variant="outline"
-            >
-              SEPET
+            <Button className={classes.buttonCart} size="md">
+              <Indicator color="red" inline label="0" size={16}>
+                <AiOutlineShoppingCart size={20} />
+              </Indicator>
+              &nbsp;&nbsp;&nbsp;SEPET
             </Button>
           </Group>
         </header>

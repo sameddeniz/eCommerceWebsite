@@ -9,50 +9,34 @@ import { Grid } from "@mantine/core";
 const HeaderNormalMenu = () => {
   return (
     <>
-      <Container size="lg" >
-        <SimpleGrid cols={6} className={classes.headerBlackMenu}>
-          <Text>PROTEİN</Text>
-          <Text>SPOR GIDALARI</Text>
-          <Text>SAĞLIK</Text>
-          <Text>GIDA</Text>
-          <Text>VİTAMİN</Text>
-          <Text>TÜM ÜRÜNLER</Text>
-        </SimpleGrid>
-      </Container>
+      <div style={{ width: "100%", backgroundColor: "black" }}>
+        <Container size="lg">
+          <SimpleGrid cols={6} className={classes.headerBlackMenu}>
+            <Text>PROTEİN</Text>
+            <Text>SPOR GIDALARI</Text>
+            <Text>SAĞLIK</Text>
+            <Text>GIDA</Text>
+            <Text>VİTAMİN</Text>
+            <Text>TÜM ÜRÜNLER</Text>
+          </SimpleGrid>
+        </Container>
+      </div>
 
-      {/* <Grid className={classes.headerWhiteMenu}>
-        <Grid.Col span={4}>
-          <Text>
+      <div style={{ width: "100%", backgroundColor: "#f7f7f7" }}>
+        <Container className={classes.headerWhiteMenu}>
+          <div>
             <BsFillBoxSeamFill /> <strong>AYNI GÜN KARGO</strong> - 16.00'DAN
             ÖNCEKİ SİPARİŞLERDE
-          </Text>
-        </Grid.Col>
-        <Grid.Col span={4}>
-          <Text>
+          </div>
+          <div>
             <FaRegSmile /> <strong>ÜCRETSİZ KARGO</strong> - 100 TL ÜZERİ
             SİPARİŞLERDE
-          </Text>
-        </Grid.Col>
-        <Grid.Col span={4}>
-          <Text>
+          </div>
+          <div>
             <VscWorkspaceTrusted /> <strong>GÜVENLİ ALIŞVERİŞ</strong> -
             1.000.000+ MUTLU MÜŞTERİ
-          </Text>
-        </Grid.Col>
-      </Grid> */}
-      <div className={classes.headerWhiteMenu}>
-        <div>
-          <BsFillBoxSeamFill /> <strong>AYNI GÜN KARGO</strong> - 16.00'DAN
-          ÖNCEKİ SİPARİŞLERDE
-        </div>
-        <div>
-          <FaRegSmile /> <strong>ÜCRETSİZ KARGO</strong> - 100 TL ÜZERİ
-          SİPARİŞLERDE
-        </div>
-        <div>
-          <VscWorkspaceTrusted /> <strong>GÜVENLİ ALIŞVERİŞ</strong> -
-          1.000.000+ MUTLU MÜŞTERİ
-        </div>
+          </div>
+        </Container>
       </div>
     </>
   );
