@@ -17,7 +17,7 @@ const Categories = () => {
               <a href="index.html">
                 <Image
                   radius="md"
-                  src="/src/assets/categories/vitaminler.png"
+                  src="/src/assets/categories/protein.png"
                 />
               </a>
             </div>
@@ -41,7 +41,7 @@ const Categories = () => {
             </div>
             <div className={classes.categories}>
               <a href="index.html">
-                <Image radius="md" src="/src/assets/categories/gida.png" />
+                <Image radius="md" src="/src/assets/categories/saglik.png" />
               </a>
             </div>
           </SimpleGrid>

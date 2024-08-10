@@ -1,8 +1,32 @@
 import React from "react";
 import { Card, Container, Image, SimpleGrid, Text } from "@mantine/core";
 import classes from "./productsCards.module.css";
+import { IconStarFilled } from "@tabler/icons-react";
+import products from "./productDummy.tsx";
 
-const productCards = () => {
+interface ProductCardProps {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  stars: number;
+  comments: number;
+  price: any;
+}
+
+const productCards: React.FC<ProductCardProps> = (
+  id,
+  image,
+  title,
+  description,
+  stars,
+  comments,
+  price
+) => {
+  // const productData = products.map((product) => {
+  //   product.title
+  //   console.log(productData);
+  // });
   return (
     <>
       <div>
@@ -12,25 +36,40 @@ const productCards = () => {
         <SimpleGrid cols={6}>
           <Card
             shadow="sm"
-            padding="xl"
+            padding="sm"
             component="a"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="#"
             target="_blank"
+            justify="center"
           >
             <Card.Section>
               <Image
-                src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                src="/src/assets/topSellers/topSeller1.png"
                 h={160}
                 alt="No way!"
               />
             </Card.Section>
-            <Text fw={500} size="lg" mt="md">
-              You&apos;ve won a million dollars in cash!
-            </Text>
-            <Text mt="xs" c="dimmed" size="sm">
-              Please click anywhere on this card to claim your reward, this is
-              not a fraud, trust us
-            </Text>
+            <Card.Section justify="center" align="center">
+              <Text fw={700} size="lg" mt="md">
+                WHEY PROTEİN
+              </Text>
+              <Text mt="xs" mb="xs" c="dimmed" size="xs">
+                EN ÇOK TERCİH EDİLEN PROTEİN TAKVİYESİ
+              </Text>
+              <div>
+                <IconStarFilled color="yellow" />
+                <IconStarFilled color="yellow" />
+                <IconStarFilled color="yellow" />
+                <IconStarFilled color="yellow" />
+                <IconStarFilled color="yellow" />
+              </div>
+              <Text mt="xs" c="dimmed" size="sm">
+                9514 Yorum
+              </Text>
+              <Text fw={700} mt="xs" mb="xs" size="lg">
+                599 TL
+              </Text>
+            </Card.Section>
           </Card>
         </SimpleGrid>
       </Container>

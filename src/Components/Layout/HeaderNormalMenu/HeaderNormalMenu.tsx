@@ -4,7 +4,6 @@ import { Container, SimpleGrid, Text } from "@mantine/core";
 import { BsFillBoxSeamFill } from "react-icons/bs";
 import { FaRegSmile } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
-import { Grid } from "@mantine/core";
 
 const HeaderNormalMenu = () => {
   return (
