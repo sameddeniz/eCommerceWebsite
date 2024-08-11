@@ -1,11 +1,10 @@
 import {
   Group,
-  Burger,
   Button,
   Container,
   Input,
-  SimpleGrid,
   Indicator,
+  Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./navbar.module.css";
@@ -13,8 +12,11 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
 import { FaCaretDown } from "react-icons/fa";
 
+import { Drawer } from "@mantine/core";
+import DrawerCart from "../../DrawerCart/DrawerCart";
+
 function Navbar() {
-  // const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   return (
     <>
@@ -47,7 +49,7 @@ function Navbar() {
             >
               HESAP
             </Button>
-            <Button className={classes.buttonCart} size="md">
+            <Button onClick={toggle} className={classes.buttonCart} size="md">
               <Indicator color="red" inline label="0" size={16}>
                 <AiOutlineShoppingCart size={20} />
               </Indicator>
@@ -56,6 +58,7 @@ function Navbar() {
           </Group>
         </header>
       </Container>
+      <DrawerCart opened={opened} onClose={close} />
     </>
   );
 }

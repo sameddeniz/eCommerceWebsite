@@ -30,3 +30,9 @@
   width: 190px;
   /* margin-right: 30px; */
 }
+
+.drawerTopText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

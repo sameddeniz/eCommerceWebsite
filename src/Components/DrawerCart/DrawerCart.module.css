@@ -1,0 +1,35 @@
+.drawerTopText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawerBottomButton {
+  background-color: black;
+  color: white;
+  width: auto;
+  height: 72px;
+  font-weight: 600;
+  font-size: large;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  margin: 15px;
+}
+
+.drawerBottomButton:hover {
+  background-color: black;
+}
+
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.productsInCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
