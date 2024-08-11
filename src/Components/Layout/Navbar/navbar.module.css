@@ -24,6 +24,13 @@
   width: 135px;
 }
 
+.buttonLoginSignup {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  width: 100% !important;
+}
+
 .buttonCart {
   background-color: #919191 !important;
   color: white !important;

@@ -5,18 +5,20 @@ import {
   Input,
   Indicator,
   Text,
+  Popover,
+  Flex,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./navbar.module.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
 import { FaCaretDown } from "react-icons/fa";
-
-import { Drawer } from "@mantine/core";
 import DrawerCart from "../../DrawerCart/DrawerCart";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [opened, { toggle, close }] = useDisclosure(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -39,7 +41,54 @@ function Navbar() {
                 ARA
               </Button>
             </Button.Group>
-            <Button
+            <Popover
+              width={150}
+              trapFocus
+              position="bottom"
+              withArrow
+              shadow="md"
+              justify="space-between"
+            >
+              <Popover.Target>
+                <Button
+                  leftSection={<VscAccount size={16} />}
+                  rightSection={<FaCaretDown size={18} />}
+                  className={classes.buttonAcc}
+                  variant="outline"
+                  color="gray"
+                  size="md"
+                >
+                  HESAP
+                </Button>
+              </Popover.Target>
+              <Popover.Dropdown>
+                <Flex
+                  justify="center"
+                  align="center"
+                  direction="column"
+                  className={classes.buttonLoginSignup}
+                >
+                  <Button
+                    onClick={() => navigate("/login")}
+                    variant="subtle"
+                    color="gray"
+                    size="md"
+                    mb="md"
+                  >
+                    ÜYE GİRİŞİ
+                  </Button>
+                  <Button
+                    onClick={() => navigate("/login")}
+                    variant="subtle"
+                    color="gray"
+                    size="md"
+                  >
+                    ÜYE OL
+                  </Button>
+                </Flex>
+              </Popover.Dropdown>
+            </Popover>
+            {/* <Button
               leftSection={<VscAccount size={16} />}
               rightSection={<FaCaretDown size={18} />}
               className={classes.buttonAcc}
@@ -48,7 +97,8 @@ function Navbar() {
               size="md"
             >
               HESAP
-            </Button>
+            </Button> */}
+
             <Button onClick={toggle} className={classes.buttonCart} size="md">
               <Indicator color="red" inline label="0" size={16}>
                 <AiOutlineShoppingCart size={20} />

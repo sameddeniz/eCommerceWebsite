@@ -15,11 +15,11 @@ const DrawerCart = ({ opened, onClose }) => {
         <div className={classes.drawerContent}>
           <Text fw={700} size="xl" mb="md" className={classes.drawerTopText}>
             SEPETİM
-          </Text>
+          </Text><hr />
           <div className={classes.productsInCart}>SEPETTEKİ ÜRÜN GELECEK</div>
           <div className={classes.drawerSumTextAndButton}>
             <Text fw={700} size="md" className={classes.drawerSumText}>
-              TOPLAM XXX TL
+              TOPLAM 499 TL
             </Text>
             <Button
               rightSection={<FaCaretRight size={28} />}
