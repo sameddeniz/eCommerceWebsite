@@ -1,22 +1,27 @@
 import React from "react";
 import classes from "./HeaderNormalMenu.module.css";
-import { Container, SimpleGrid, Text } from "@mantine/core";
+import { Container, SimpleGrid, Text, UnstyledButton } from "@mantine/core";
 import { BsFillBoxSeamFill } from "react-icons/bs";
 import { FaRegSmile } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { useNavigate } from "react-router-dom";
 
 const HeaderNormalMenu = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div style={{ width: "100%", backgroundColor: "black" }}>
         <Container size="lg">
           <SimpleGrid cols={6} className={classes.headerBlackMenu}>
-            <Text>PROTEİN</Text>
-            <Text>SPOR GIDALARI</Text>
-            <Text>SAĞLIK</Text>
-            <Text>GIDA</Text>
-            <Text>VİTAMİN</Text>
-            <Text>TÜM ÜRÜNLER</Text>
+            <UnstyledButton onClick={() => navigate("/protein")}>
+              PROTEİN
+            </UnstyledButton>
+            <UnstyledButton>SPOR GIDALARI</UnstyledButton>
+            <UnstyledButton>SAĞLIK</UnstyledButton>
+            <UnstyledButton>GIDA</UnstyledButton>
+            <UnstyledButton>VİTAMİN</UnstyledButton>
+            <UnstyledButton>TÜM ÜRÜNLER</UnstyledButton>
           </SimpleGrid>
         </Container>
       </div>

@@ -9,4 +9,11 @@
     align-items: center;
     display: flex;
     font-size: xx-large;
+    font-weight: 800;
+}
+
+.productListBelowText {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

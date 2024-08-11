@@ -9,7 +9,7 @@ const Categories = () => {
         <Container size="lg">
           <SimpleGrid cols={3} mt="md">
             <div className={classes.categories} >
-              <a href="index.html">
+              <a href="/protein">
                 <Image radius="md" src="/src/assets/categories/protein2.png" />
               </a>
             </div>
