@@ -1,8 +1,7 @@
 import React from "react";
-import { Card, Container, Image, SimpleGrid, Text } from "@mantine/core";
+import { Card, Image, Text } from "@mantine/core";
 import classes from "./productsCards.module.css";
 import { IconStarFilled } from "@tabler/icons-react";
-import products from "./productDummy.tsx";
 
 // interface ProductCardProps {
 //   id: number;
@@ -55,21 +54,21 @@ const ProductCard = ({ product }) => {
   );
 };
 
-function ProductList() {
-  return (
-    <>
-      <Container size="lg">
-        <div>
-          <h3 className={classes.topSellerH3}>ÇOK SATANLAR</h3>
-        </div>
-        <SimpleGrid cols={6}>
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </SimpleGrid>
-      </Container>
-    </>
-  );
-}
+// function ProductList() {
+//   return (
+//     <>
+//       <Container size="lg">
+//         <div>
+//           <h3 className={classes.topSellerH3}>ÇOK SATANLAR</h3>
+//         </div>
+//         <SimpleGrid cols={6}>
+//           {products.map((product) => (
+//             <ProductCard key={product.id} product={product} />
+//           ))}
+//         </SimpleGrid>
+//       </Container>
+//     </>
+//   );
+// }
 
-export default ProductList;
+export default ProductCard;

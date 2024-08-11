@@ -7,41 +7,41 @@ const Categories = () => {
     <>
       <div>
         <Container size="lg">
-          <SimpleGrid cols={3}>
-            <div className={classes.categories}>
+          <SimpleGrid cols={3} mt="md">
+            <div className={classes.categories} >
               <a href="index.html">
-                <Image radius="md" src="/src/assets/categories/protein.png" />
+                <Image radius="md" src="/src/assets/categories/protein2.png" />
               </a>
             </div>
             <div className={classes.categories}>
               <a href="index.html">
                 <Image
                   radius="md"
-                  src="/src/assets/categories/protein.png"
+                  src="/src/assets/categories/vitaminler2.png"
                 />
               </a>
             </div>
             <div className={classes.categories}>
               <a href="index.html">
-                <Image radius="md" src="/src/assets/categories/saglik.png" />
+                <Image radius="md" src="/src/assets/categories/saglik2.png" />
               </a>
             </div>
             <div className={classes.categories}>
               <a href="index.html">
                 <Image
                   radius="md"
-                  src="/src/assets/categories/sporgidalari.png"
+                  src="/src/assets/categories/sporgidalari2.png"
                 />
               </a>
             </div>
             <div className={classes.categories}>
               <a href="index.html">
-                <Image radius="md" src="/src/assets/categories/gida.png" />
+                <Image radius="md" src="/src/assets/categories/gida2.png" />
               </a>
             </div>
             <div className={classes.categories}>
               <a href="index.html">
-                <Image radius="md" src="/src/assets/categories/saglik.png" />
+                <Image radius="md" src="/src/assets/categories/tumurunler.png" />
               </a>
             </div>
           </SimpleGrid>

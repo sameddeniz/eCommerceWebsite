@@ -17,12 +17,17 @@ const DrawerCart = ({ opened, onClose }) => {
             SEPETİM
           </Text>
           <div className={classes.productsInCart}>SEPETTEKİ ÜRÜN GELECEK</div>
-          <Button
-            rightSection={<FaCaretRight size={28} />}
-            className={classes.drawerBottomButton}
-          >
-            DEVAM ET
-          </Button>
+          <div className={classes.drawerSumTextAndButton}>
+            <Text fw={700} size="md" className={classes.drawerSumText}>
+              TOPLAM XXX TL
+            </Text>
+            <Button
+              rightSection={<FaCaretRight size={28} />}
+              className={classes.drawerBottomButton}
+            >
+              DEVAM ET
+            </Button>
+          </div>
         </div>
       </Drawer>
     </div>

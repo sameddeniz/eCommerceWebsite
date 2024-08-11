@@ -9,7 +9,7 @@ import CustomerComments from "../Components/Comments/customerComments";
 import AdvFirstImage from "../Components/AdvertisementSection/AdvFirstImage/AdvFirstImage";
 import AdvSecondText from "../Components/AdvertisementSection/AdvSecondText/AdvSecondText";
 import Footer from "../Components/Layout/Footer/footer";
-import ProductList from "../Components/Products/ProductCards/productCards";
+import TopSellers from "../Components/Products/ProductCards/TopSellers";
 
 function HomePage() {
   return (
@@ -19,7 +19,7 @@ function HomePage() {
       <HeaderNormalMenu />
       <HeroSection />
       <Categories />
-      <ProductList />
+      <TopSellers />
       <AdvFirstImage />
       <CustomerComments />
       <AdvSecondText />
