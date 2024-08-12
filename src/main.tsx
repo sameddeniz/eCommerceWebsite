@@ -4,6 +4,8 @@ import HomePage from "./Pages/HomePage.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProteinPage from "./Pages/ProteinPage.tsx";
 import LoginSignupPage from "./Pages/LoginSignupPage.tsx";
+import AboutUsPage from "./Pages/AboutUsPage.tsx";
+import ContactPage from "./Pages/ContactPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginSignupPage />,
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUsPage />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
   },
 ]);
 

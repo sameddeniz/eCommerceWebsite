@@ -1,9 +1,10 @@
 import { Text, Container, SimpleGrid } from "@mantine/core";
 import classes from "./footer.module.css";
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div style={{ width: "100%", backgroundColor: "#222222" }}>
@@ -21,7 +22,7 @@ const Footer = () => {
             <div>
               <Text size="xs" c="dimmed">
                 <Text>İletişim</Text>
-                <Text>Hakkımızda</Text>
+                <Text onClick={() => navigate("/aboutus")}>Hakkımızda</Text>
                 <Text>Sıkça Sorulan Sorular</Text>
                 <Text>KVKK</Text>
                 <Text>Çalışma İlkelerimiz</Text>
