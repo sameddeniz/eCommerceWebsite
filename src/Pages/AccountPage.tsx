@@ -5,6 +5,7 @@ import Navbar from "../Components/Layout/Navbar/navbar";
 import { Container, Grid, MantineProvider } from "@mantine/core";
 import Footer from "../Components/Layout/Footer/footer";
 import LeftMainMenu from "../Components/Accounts/LeftMainMenu/LeftMainMenu";
+import AccountInfo from "../Components/Accounts/AccountInfo/AccountInfo";
 
 function AccountPage() {
   return (
@@ -17,7 +18,9 @@ function AccountPage() {
           <Grid.Col span={3}>
             <LeftMainMenu />
           </Grid.Col>
-          <Grid.Col span="auto">2</Grid.Col>
+          <Grid.Col span="auto">
+            <AccountInfo />
+          </Grid.Col>
         </Grid>
       </Container>
       <Footer />
