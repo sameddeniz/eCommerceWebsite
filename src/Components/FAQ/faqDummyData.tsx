@@ -31,4 +31,4 @@ const faquestions = [
   },
 ];
 
-export default groceries;
+export default faquestions;

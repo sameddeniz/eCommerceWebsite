@@ -7,6 +7,7 @@ import LoginSignupPage from "./Pages/LoginSignupPage.tsx";
 import AboutUsPage from "./Pages/AboutUsPage.tsx";
 import ContactPage from "./Pages/ContactPage.tsx";
 import FaqPage from "./Pages/faqPage.tsx";
+import AccountPage from "./Pages/AccountPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/faq",
     element: <FaqPage />,
+  },
+  {
+    path: "/account",
+    element: <AccountPage />,
   },
 ]);
 
