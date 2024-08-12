@@ -6,6 +6,7 @@ import ProteinPage from "./Pages/ProteinPage.tsx";
 import LoginSignupPage from "./Pages/LoginSignupPage.tsx";
 import AboutUsPage from "./Pages/AboutUsPage.tsx";
 import ContactPage from "./Pages/ContactPage.tsx";
+import FaqPage from "./Pages/faqPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/faq",
+    element: <FaqPage />,
   },
 ]);
 
