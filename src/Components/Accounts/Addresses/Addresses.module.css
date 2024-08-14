@@ -1,0 +1,10 @@
+.addressWarning {
+  background-color: #d2dfff;
+  padding-left: 20px;
+  height: 50px;
+  align-items: center;
+  justify-content: baseline;
+  display: flex;
+  border: 1px solid blue;
+  border-radius: 5px;
+}

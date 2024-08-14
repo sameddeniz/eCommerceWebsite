@@ -14,7 +14,7 @@ const LeftMainMenu = () => {
       </Text>
       <Group mb="xl">
         <IconAdjustmentsHorizontal size={24} />
-        <Text variant="transparent" fw={600}>
+        <Text variant="transparent" fw={400}>
           Hesap Bilgilerim
         </Text>
       </Group>

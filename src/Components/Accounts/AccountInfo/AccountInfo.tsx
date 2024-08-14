@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input, NumberInput, SimpleGrid, Text } from "@mantine/core";
+import { Button, Input, SimpleGrid, Text } from "@mantine/core";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 
