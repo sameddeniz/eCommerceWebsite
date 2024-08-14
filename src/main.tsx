@@ -10,6 +10,7 @@ import FaqPage from "./Pages/faqPage.tsx";
 import AccountPage from "./Pages/AccountPage.tsx";
 import AddressPage from "./Pages/AddressPage.tsx";
 import OrdersPage from "./Pages/OrdersPage.tsx";
+import OrderDetailsPage from "./Pages/OrderDetailsPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/orders",
     element: <OrdersPage />,
+  },
+  {
+    path: "/orderdetails",
+    element: <OrderDetailsPage />,
   },
 ]);
 
