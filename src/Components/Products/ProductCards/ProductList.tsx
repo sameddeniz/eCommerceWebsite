@@ -19,7 +19,7 @@ function ProductList() {
         </div>
         <SimpleGrid cols={4}>
           {products12.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} height={277} />
           ))}
         </SimpleGrid>
         <Text mt="xl" mb="xl" className={classes.productListBelowText}>

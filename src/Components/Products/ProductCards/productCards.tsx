@@ -13,7 +13,7 @@ import { IconStarFilled } from "@tabler/icons-react";
 //   price: any;
 // }
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, height }) => {
   return (
     <>
       <Card
@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
         mb="lg"
       >
         <Card.Section>
-          <Image src={product.image} h={160} alt="No way!" />
+          <Image src={product.image} h={height} alt="No way!" />
         </Card.Section>
         <Card.Section justify="center" align="center">
           <Text fw={700} size="lg" mt="md">
